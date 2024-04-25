@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="forms and input fields examples">
+    <title>Forms and Input Fields</title>
+</head>
+<body>
+
+    <!-- the action attribute in a form is where the input data will be sent -->
+    <form action="process.php">
+        <div>
+            <!-- name and id must match -->
+            <!-- you can have a default value fill the input field with the value attribute or have a message appear that disapears when clicked by using the placeholder attribute -->
+            <label for="name">Name</label><br>
+            <!-- input types can vary -->
+            <input type="text" id="name" name="name" placeholder="John">
+        </div>
+        <div>
+            <!-- the email type allows for validation to confirm it is an email -->
+            <label for="Email">email</label><br>
+            <input type="email" id="Email" name="email" placeholder="enter your email">
+        </div>
+        <div>
+            <!-- text area types allow for more text. they can be specified in size by the cols and rows attributes -->
+            <label for="message">Message</label><br>
+            <textarea type="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <!-- the select type is for a drop down list of options. You can use the selected attribute to have an option selected by default when the page loads-->
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <!-- radio type is a list you can select from. you can put a checked attribute to have that option be default selected upon the page loading -->
+            <label for="membership">Membership</label><br>
+            <input type="radio" name="membership" value="simple" id="membership"> Simple
+            <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+            <input type="radio" name="membership" value="gold" id="membership"> Gold
+            <input type="radio" name="membership" value="diamond" id="membership"> Diamond
+        </div>
+        <div>
+            <!-- checkboxes can have multiple selected unlike radios -->
+            <!-- the values are what actually gets submitted to the output -->
+            <!-- a default selection can be loaded on page startup with the checked attribute -->
+            <label for="preferences">I Like...</label><br>
+            <input type="checkbox" name="preferences" value="dogs" id="preferences"> Dogs <br>
+            <input type="checkbox" name="preferences" value="cats" id="preferences" checked> Cats <br>
+            <input type="checkbox" name="preferences" value="birds" id="preferences"> Birds <br>
+        </div>
+        <!-- the submit button can be made with either an input or a button type -->
+        <input type="submit" value="Submit"><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
