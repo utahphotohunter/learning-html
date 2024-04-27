@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Box Model Examples">
+    <title>box model</title>
+
+    <style>
+        * {
+            /* border box keeps the boxes the same size and pushes content in while keeping things to scale */
+            box-sizing: border-box;
+            /* this resets all margins and padding to 0 and allows you to make all padding and margins from scratch */
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            margin: 10px;
+            padding: 20px;
+            border: black solid 1px;
+            border-radius: 5px;
+        }
+
+        .box h3 {
+            padding-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis obcaecati ratione corporis eius autem aperiam a laborum dolorem iusto eveniet reiciendis voluptate officia dolore sequi quidem saepe, omnis dolor similique?</p>
+    </div>
+
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam quaerat modi omnis alias debitis deleniti numquam adipisci et dignissimos tempora magni repellat repellendus nisi impedit corrupti voluptatem commodi, neque quibusdam? Sed odit, sint rerum quia eos molestiae cumque dicta laudantium veniam voluptates facilis enim beatae illo recusandae nisi, velit minus. Id iusto minima impedit.</p>
+    </div>
+
+</body>
+</html>
