@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="links and buttons">
+    <title>links & buttons</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {
+            color: darkgray;
+            /* gets rid of the underline default of the link */
+            text-decoration: none;
+        }
+
+        /* a psuedo selector that only applies when the element is hovered over */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        .btn {
+            background-color: #9fa8e2;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 7px;
+            /* makes the cursor into a pointer on all things in the class */
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: rgb(255, 255, 255);
+            background: #635bbc;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <br>
+    <a href="#" class="btn">Link</a>
+    <br>
+    <br>
+    <button class="btn">Button</button>
+
+</body>
+</html>
