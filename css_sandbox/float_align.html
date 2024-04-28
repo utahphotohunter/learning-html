@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Float and Align">
+    <title>float & align</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* this class clears the next element from the floats on the left and right */
+        .clr {
+            clear: both;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+            background-color: #eff2da;
+        }
+
+        .container {
+            /* width is a fixed width of the container and does not respond to window size */
+            /* max-width allows the display to be responsive to different window sizes */
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+        .box {
+            border: black 3px solid;
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .box p {
+            text-align: center;
+        }
+
+        #box2 {
+            float: left;
+            width: 65%;
+        }
+
+        #box3 {
+            float: right;
+            width: 34%;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="box1" class="box">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit ducimus molestiae officia illo incidunt vitae magnam, quas ab quos unde nam, similique praesentium, animi consequatur assumenda! Eaque adipisci officiis, exercitationem ducimus odio alias asperiores voluptatum nihil est rem laboriosam tempora? Maxime exercitationem deleniti quam sed assumenda tempore sint voluptatem.</p>
+        </div>
+        <div id="box2" class="box">
+            <h3>Heading 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod quidem cum est nobis eligendi atque culpa, laudantium voluptatibus minima quis eius explicabo cumque aperiam?</p>
+        </div>
+        <div id="box3" class="box">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam nam, laudantium rem quod veniam iusto ea deleniti laborum! Facere rem aspernatur culpa neque, vitae praesentium minus itaque accusantium distinctio doloribus. Iusto recusandae corporis vero.</p>
+        </div>
+        <!-- if using floats, you must clear the floats with a dedicated div -->
+        <div class="clr"></div>
+        <div id="box4" class="box">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam nam, laudantium rem quod veniam iusto ea deleniti laborum! Facere rem aspernatur culpa neque, vitae praesentium minus itaque accusantium distinctio doloribus. Iusto recusandae corporis vero.</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
