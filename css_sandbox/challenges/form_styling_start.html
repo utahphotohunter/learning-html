@@ -15,18 +15,24 @@
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       font-family: "Raleway";
       }
 
       body {
         /* 
           -Background color is #344a72
         */
+        background-color: #344a72;
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
+       text-decoration: none;
       }
 
       #container {
@@ -35,12 +41,21 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        max-width: 300px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 20px;
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
+        position: relative;
+        height: 475px;
+        background-color: white;
+        padding: 10px;
+        
       }
 
       .form-wrap h1,
@@ -48,24 +63,43 @@
         /* 
           May want to center these
         */
+        text-align: center;
+        padding: 5px;
+        position: relative;
       }
 
       .form-wrap .form-group {
         /* 
           Each label, input is wrapped in .form-group
         */
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #777777;
+      }
+
+      .form-wrap .form-group:last-of-type {
+        padding-bottom: 15px;
       }
 
       .form-wrap .form-group label {
         /* 
           Label should be turned into a block element
         */
+        display: block;
+        padding-bottom: 2px;
       }
 
       .form-wrap .form-group input {
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
+        width: 100%;
+        height: 25px;
+        border: lightgray 2px solid;
+        border-radius: 5px;
+        color: lightgray;
       }
 
       .form-wrap button {
@@ -73,30 +107,49 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        display: block;
+        background-color: #49c1a2;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        width: 100%;
+        height: 25px;
+        font-size: x-small;
+        cursor: pointer;
       }
 
       .form-wrap button:hover {
         /* 
           Hover background color for button is #37a08e
         */
+        background-color: #37a08e;
       }
 
       .form-wrap .bottom-text {
         /* 
           Bottom text is smaller
         */
+        font-size: smaller;
+        position: absolute;
+        bottom: 5px;
+        padding: 5px;
       }
 
       footer {
         /* 
         Should be centered
        */
+       text-align: center;
+       position: relative;
+       color: white;
+       font-size: x-small;
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
+        color: #49c1a2;
       }
     </style>
   </head>
