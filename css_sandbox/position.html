@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Postioning">
+    <title>CSS Postioning</title>
+    <style>
+
+        body {
+            height: 5000px;
+        }
+
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            border: black solid 2px;
+            /* everything has a default postion of static meaning it is not affected by top right bottom and left values*/
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border: black solid 2px;
+            background-color: darkgrey;
+            position: relative;
+        }
+
+
+        #box1 {
+            /* relative postion means it can be changed from its normal postion */
+            position: relative;
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            /* z index is the order front to back. the higher the z index, the closer it will be*/
+            z-index: 1;
+        }
+
+        #box2 {
+            /* absoule postion is postioned absoutely relative to its parent element. the parent element must be postioned relative */
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #box3 {
+            /* absoule postion is postioned absoutely relative to its parent element. the parent element must be postioned relative */
+            background-color: green;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+
+        #box4 {
+            /* fixed postion is relative to the viewport */
+            /* fixed removes the element from the flow of the document and keeps in fixed to the viewport */
+            background-color: yellow;
+            position: fixed;
+            bottom: 15px;
+            left: 200px;
+        }
+
+        #box5 {
+            /* sticky postion is based on the scroll position */
+            background-color: purple;
+            position: sticky;
+            top: 0;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div id="box1" class="box"></div>
+    <div class="container">
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+    </div>
+    <div id="box4" class="box"></div>
+    <div id="box5" class="box"></div>
+    
+</body>
+</html>
