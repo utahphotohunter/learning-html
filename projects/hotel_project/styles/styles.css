@@ -31,11 +31,61 @@ p {
 }
 
 /* utilities */
+
 .container {
     max-width: 1100px;
     margin: auto;
     overflow: auto;
     padding: 0 20px;
+}
+
+.text-primary {
+    color: #f7c0aa;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #f7c0aa;
+    color: #444;
+}
+
+.btn-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-background {
+    background-color: #333;
+    color: white;
+}
+
+.light-background {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.primary-background {
+    background-color: #f7c0aa;
+    color: #333;
+}
+
+.clr {
+    clear: both;
 }
 
 /* navbar */
@@ -77,6 +127,10 @@ p {
     color: #f7c0aa;
 }
 
+#navbar ul li a:hover {
+    font-weight: bold;
+}
+
 .logo {
     margin-left: 50px;
     text-align: center;
@@ -87,3 +141,80 @@ p {
 .logo a:hover {
     text-decoration: none;
 }
+
+
+/* home page */
+
+/* showcase */
+
+#showcase {
+    background: url("/projects/hotel_project/img/showcase.jpg") 
+    no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content {
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/* info */
+
+#home-info {
+    max-height: 400px;
+}
+
+#home-info .info-img img {
+    float: left;
+    width: 50%;
+    background: url("/projects/hotel_project/img/photo-1.jpg") no-repeat;
+    min-height: 100%;
+    max-height: 400px;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    min-height: 400px;
+    overflow: hidden;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+#home-info .info-content a {
+    margin-top: 25px;
+}
+
+/* features */
+
+#features .box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 15px;
+}
+
+/* footer */
+
+#main-footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+

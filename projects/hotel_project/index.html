@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home page of Hotel">
     <meta name="keywords" content="hotel,boston,luxary,pool,spa,extraordinary,sleep,stay">
+    <script src="https://kit.fontawesome.com/e0581fb5c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/projects/hotel_project/styles/styles.css">
     <title>Hotel | Home</title>
 </head>
@@ -22,51 +23,54 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Enjoy Your Stay</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corrupti repellendus repudiandae accusantium ea facere?</p>
-                <button><a href="#">About Our Hotel</a></button>
-            </div>
-            <div>
-                <img src="/projects/hotel_project/img/photo-1.jpg" alt="The front of a hotel from streetview.">
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>The History of Our Hotel</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, neque totam? Possimus eos ipsum saepe, iste ea nostrum repudiandae officia natus voluptate libero fugit dolore, blanditiis cumque voluptatem! Blanditiis at ut tempore itaque excepturi quisquam obcaecati atque perferendis omnis, voluptatibus, exercitationem minima sunt tempora qui. Eum vitae ea quae dignissimos.</p>
-                <button><a href="#">Read More</a></button>
+        <section id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corrupti repellendus repudiandae accusantium ea facere?</p>
+                    <a class="btn" href="#">About Our Hotel</a>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section id="home-info">
+            <div class="info-img">
                 <img src="/projects/hotel_project/img/photo-1.jpg" alt="a hotel face seen from the street">
             </div>
+            <div class="info-content dark-background" >
+                <h2><span class="text-primary">The History</span> of Our Hotel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, neque totam? Possimus eos ipsum saepe, iste ea nostrum repudiandae officia natus voluptate libero fugit dolore, blanditiis cumque voluptatem! Blanditiis at ut tempore itaque excepturi quisquam obcaecati atque perferendis omnis, voluptatibus, exercitationem minima sunt tempora qui. Eum vitae ea quae dignissimos.</p>
+                <a class="btn btn-light" href="#">Read More</a>
+            </div>
         </section>
-        <article>
-            <div>
-                <h3>Great Location</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tempore.</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Free Meals</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Fitness Room</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, inventore accusantium.</p>
-            </div>
-        </article>
+        <section id="features">
+            <article class="box light-background">
+                <div>
+                    <i class="fa-solid fa-hotel fa-3x"></i>
+                    <h3>Great Location</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tempore.</p>
+                </div>
+            </article>
+            <article class="box primary-background">
+                <div>
+                    <i class="fa-solid fa-utensils fa-3x"></i>
+                    <h3>Free Meals</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?</p>
+                </div>
+            </article>
+            <article class="box light-background">
+                <div>
+                    <i class="fa-solid fa-dumbbell fa-3x"></i>
+                    <h3>Fitness Room</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, inventore accusantium.</p>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
-<footer>
-    <div>
-        <p>Hotel &copy; 2024, All Rights Reserved</p>
+<div class="clr"></div>
+<footer id="main-footer">
+    <div class="container">
+        <p>Hotel BT &copy; 2024, All Rights Reserved</p>
     </div>
 </footer>
 </html>
