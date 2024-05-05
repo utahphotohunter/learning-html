@@ -142,6 +142,16 @@ p {
     text-decoration: none;
 }
 
+/* footer */
+
+#main-footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+
+
 
 /* home page */
 
@@ -209,12 +219,53 @@ p {
     margin-bottom: 15px;
 }
 
-/* footer */
 
-#main-footer {
-    text-align: center;
-    background-color: #444;
-    color: white;
-    padding: 10px;
+
+/* About page */
+/* top section */
+
+#about-info {
+    height: 400px;
+    position: relative;
 }
 
+#about-info .about-content {
+    float: left;
+    width: 50%;
+    padding: 20px 30px;
+}
+
+#about-info .about-content h1 {
+    font-size: 40px;
+}
+
+#about-info .about-img img {
+    max-height: 300px;
+}
+
+
+
+/* testimonials section */
+
+#reviews {
+    height: 500px;
+    border: red solid 2px;
+}
+
+#reviews .customer-review {
+    height: 25%;
+    border: blue solid 2px;
+    margin: 0 60px 40px 60px;
+}
+
+#reviews .customer-review .container {
+    height: 100%;
+    border: red solid 2px;
+}
+
+#reviews .customer-img img {
+    float: left;
+    height: 100px;
+    margin-top: 7px;
+    margin-right: 20px;
+}
