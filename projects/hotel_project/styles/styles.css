@@ -88,6 +88,14 @@ p {
     clear: both;
 }
 
+/* padding */
+
+.py-1 {padding: 10px 0;}
+
+.py-2 {padding: 20px 0;}
+
+.py-3 {padding: 30px 0;}
+
 /* navbar */
 
 #navbar {
@@ -225,8 +233,7 @@ p {
 /* top section */
 
 #about-info {
-    height: 400px;
-    position: relative;
+    height: 450px;
 }
 
 #about-info .about-content {
@@ -239,8 +246,18 @@ p {
     font-size: 40px;
 }
 
+#about-info .about-img {
+    width: 50%;
+    height: 450px;
+    float: right;
+}
+
 #about-info .about-img img {
+    display: block;
     max-height: 300px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 50%;
 }
 
 
@@ -249,23 +266,41 @@ p {
 
 #reviews {
     height: 500px;
-    border: red solid 2px;
+    background: url("/projects/hotel_project/img/test-bg.jpg");
+}
+
+#reviews h2 {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
 #reviews .customer-review {
-    height: 25%;
-    border: blue solid 2px;
-    margin: 0 60px 40px 60px;
+    height: 30%;
+    display: block;
+    border-radius: 15px;
+    width: 1150px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 #reviews .customer-review .container {
     height: 100%;
-    border: red solid 2px;
 }
 
 #reviews .customer-img img {
     float: left;
     height: 100px;
-    margin-top: 7px;
+    margin-top: 20px;
     margin-right: 20px;
+    border-radius: 50%;
+    
+}
+
+#reviews .customer-content {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
 }
