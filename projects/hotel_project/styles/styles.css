@@ -84,6 +84,8 @@ p {
     color: #333;
 }
 
+/* clear floats */
+
 .clr {
     clear: both;
 }
