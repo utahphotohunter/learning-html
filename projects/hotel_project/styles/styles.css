@@ -286,6 +286,7 @@ p {
     width: 1150px;
     margin: auto;
     margin-bottom: 30px;
+    opacity: 0.85;
 }
 
 #reviews .customer-review .container {
