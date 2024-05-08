@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact page of Hotel">
     <meta name="keywords" content="hotel,boston,luxary,pool,spa,extraordinary,sleep,stay">
+    <script src="https://kit.fontawesome.com/e0581fb5c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/projects/hotel_project/styles/styles.css">
     <title>Hotel | Contact</title>
 </head>
@@ -22,47 +23,54 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
+        <div id="contact-form" class="container">
+            <h1><span class="text-primary">Contact</span> Us</h1>
             <form action="#">
-                <div>
+                <div class="form-intro">
                     <p>Please fill out the form below to contact us</p>
                 </div>
-                <div>
+                <div class="form-entry">
                     <!-- name field -->
                     <label for="name">Name</label>
-                    <input type="text" id="name" id="name" placeholder="John Doe">
+                    <input type="text" id="name" id="name">
                 </div>
-                <div>
+                <div class="form-entry">
                     <!-- email field -->
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your-email@email.com">
+                    <input type="email" id="email" name="email">
                 </div>
-                <div>
+                <div class="form-entry">
                     <!-- message field -->
                     <label for="message">Message</label>
-                    <input type="message" id="message" name="message" placeholder="Enter your message here">
+                    <textarea type="message" id="message" name="message"></textarea>
                 </div>
                 <div>
                     <!-- submit button -->
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn">Reset</button>
                 </div>
             </form>
-            <div>
-                <section>
-                    <!-- location -->
-                    <h3>Location</h3>
-                    <p>50 Main st, Boston MA</p>
-                </section>
-                <section>
-                    <!-- phone number -->
-                    <h3>Phone Number</h3>
-                    <p>(123) 456-7890</p>
-                </section>
-                <section>
-                    <!-- Email Address -->
-                    <h3>Email Address</h3>
-                    <p>frontdesk@hotel.com</p>
+        </div>
+            <section id="contact-info">
+                <div class="container">
+                    <article class="box">
+                        <!-- location -->
+                        <i class="fa-solid fa-hotel fa-3x"></i>
+                        <h3>Location</h3>
+                        <p>50 Main st, Boston MA</p>
+                    </article>
+                    <article class="box">
+                        <!-- phone number -->
+                        <i class="fa-solid fa-phone fa-3x"></i>
+                        <h3>Phone Number</h3>
+                        <p>(123) 456-7890</p>
+                    </article>
+                    <article class="box">
+                        <!-- Email Address -->
+                        <i class="fa-solid fa-envelope fa-3x"></i>
+                        <h3>Email Address</h3>
+                        <p>frontdesk@hotel.com</p>
+                    </article>
                 </section>
             </div>
     </main>

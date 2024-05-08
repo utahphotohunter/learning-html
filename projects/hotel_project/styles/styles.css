@@ -307,3 +307,64 @@ p {
     margin: auto;
     padding-top: 20px;
 }
+
+
+/* Contact page */
+
+/* form */
+
+#contact-form h1 {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#contact-form .form-entry {
+    padding-bottom: 20px;
+}
+
+#contact-form .form-entry label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#contact-form .form-entry input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #c2c2c2;
+}
+
+#contact-form .form-entry textarea {
+    height: 200px;
+    width: 100%;
+    border: solid 1px #c2c2c2;
+}
+
+#contact-form .form-entry textarea:focus,
+#contact-form .form-entry input:focus
+ {
+    border: solid 3px #f7c0aa;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* contact page lower section */
+
+#contact-info {
+    background-color: #333;
+    margin-top: 30px;
+}
+
+#contact-info .box {
+    display: block;
+    float: left;
+    height: 300px;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+#contact-info .box i {
+    margin-bottom: 15px;
+}
