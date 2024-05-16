@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media Queries Examples">
+    <title>Media Queries</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        /* this makes all h1 elements not show by default */
+        h1 {
+            display: none;
+        }
+
+        /* media queries */
+
+        /* smartphones are all usually under 500px */
+        @media(max-width: 500px) {
+            body {
+                background-color: red;
+            }
+
+            /* this makes the id of smartphone h1 show when the above media query is met */
+            #smartphone h1 {
+                display: block;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="widescreen">
+        <h1>Widescreen</h1>
+    </div>
+    <div id="normal">
+        <h1>Normal</h1>
+    </div>
+    <div id="tablet">
+        <h1>Tablet</h1>
+    </div>
+    <div id="Smartphone">
+        <h1>Smartphone</h1>
+    </div>
+    <div id="Landscape">
+        <h1>Landsape</h1>
+    </div>
+</body>
+</html>
